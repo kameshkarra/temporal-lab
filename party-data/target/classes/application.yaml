@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    username: partyadm
+    password: tiger
+    url: jdbc:oracle:thin:@//localhost:1521/partypdb
+  liquibase:
+    enabled: true

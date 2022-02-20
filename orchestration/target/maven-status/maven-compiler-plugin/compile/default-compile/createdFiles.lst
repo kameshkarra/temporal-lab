@@ -1,0 +1,12 @@
+lab/temporal/SuitabilityWorkflowImpl.class
+lab/temporal/KycWorkflowImpl.class
+lab/temporal/OnboardingWorkflow.class
+lab/temporal/KycManualAction.class
+lab/temporal/SuitabilityManualAction.class
+lab/temporal/Namespace.class
+lab/temporal/SuitabilityStarter.class
+lab/temporal/KycStarter.class
+lab/temporal/OnboardingWorkflowImpl.class
+lab/temporal/KycWorkflow.class
+lab/temporal/OnboardingStarter.class
+lab/temporal/SuitabilityWorkflow.class

@@ -1,0 +1,5 @@
+party/PartyDataApplication.class
+party/data/Party.class
+party/repository/PartyRepository.class
+party/controller/PartyService.class
+party/controller/PartyController.class

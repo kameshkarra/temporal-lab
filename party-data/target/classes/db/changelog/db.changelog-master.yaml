@@ -1,0 +1,66 @@
+databaseChangeLog:
+  -  preConditions:
+  -  runningAs:
+       username:  partyadm
+
+  -  changeSet:
+       id:  1
+       author:  partyadm
+       changes:
+         -  createTable:
+              tableName:  party
+              columns:
+                -  column:
+                     name:  party_id
+                     type:  int
+                     constraints:
+                       primaryKey:  true
+                       nullable:  false
+                -  column:
+                     name:  country
+                     type:  varchar(3)
+                     constraints:
+                       nullable: false
+                -  column:
+                     name:  email
+                     type:  varchar(32)
+                     constraints:
+                       nullable:  false
+                -  column:
+                     name:  phone
+                     type:  varchar(12)
+                     constraints:
+                       nullable:  false
+                -  column:
+                     name:  dob
+                     type:  varchar(8)
+                     constraints:
+                       nullable:  false
+                -  column:
+                     name:  citizenship
+                     type:  varchar(3)
+                     constraints:
+                       nullable:  false
+                -  column:
+                     name:  national_id
+                     type:  varchar(11)
+                     constraints:
+                       nullable:  false
+
+  - changeSet:
+      id: 2
+      author: partyadm
+      changes:
+        - modifyDataType:
+            columnName: dob
+            newDataType: varchar(9)
+            tableName:  party
+
+  - changeSet:
+      id: 3
+      author: partyadm
+      changes:
+        - modifyDataType:
+            columnName: dob
+            newDataType: date
+            tableName:  party
